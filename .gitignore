@@ -1,0 +1,14 @@
+/.settings
+/.project
+/gentech-osgi-api/.settings
+/gentech-osgi-api/target
+/gentech-osgi-api/.classpath
+/gentech-osgi-api/.project
+/gentech-osgi-core/.settings
+/gentech-osgi-core/target
+/gentech-osgi-core/.classpath
+/gentech-osgi-core/.project
+/gentech-osgi-packagescanner/.settings
+/gentech-osgi-packagescanner/target
+/gentech-osgi-packagescanner/.classpath
+/gentech-osgi-packagescanner/.project

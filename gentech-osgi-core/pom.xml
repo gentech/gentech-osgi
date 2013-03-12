@@ -21,24 +21,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>eu.gentech</groupId>
-		<artifactId>gentech-parent</artifactId>
-		<version>1</version>
+		<groupId>eu.gentech.osgi</groupId>
+		<artifactId>gentech-osgi-parent</artifactId>
+		<version>0.1.0</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<groupId>eu.gentech.osgi</groupId>
-	<artifactId>gentech-osgi-parent</artifactId>
-	<version>0.1.0</version>
-	<packaging>pom</packaging>
+	<artifactId>gentech-osgi-core</artifactId>
 
-	<name>GenTech OSGi Parent</name>
-
-	<url>https://github.com/gentech/gentech-osgi</url>
-
-	<modules>
-		<module>gentech-osgi-api</module>
-		<module>gentech-osgi-core</module>
-		<module>gentech-osgi-packagescanner</module>
-	</modules>
+	<name>GenTech OSGi Core</name>
 
 </project>
