@@ -31,4 +31,20 @@
 
 	<name>GenTech OSGi Package Scanner</name>
 
+	<dependencies>
+
+		<dependency>
+			<groupId>eu.gentech.osgi</groupId>
+			<artifactId>gentech-osgi-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
 </project>

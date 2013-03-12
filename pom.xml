@@ -41,4 +41,18 @@
 		<module>gentech-osgi-packagescanner</module>
 	</modules>
 
+	<dependencyManagement>
+
+		<dependencies>
+
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>core</artifactId>
+				<version>4.3.0</version>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
 </project>

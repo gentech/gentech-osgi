@@ -31,4 +31,14 @@
 
 	<name>GenTech OSGi API</name>
 
+	<dependencies>
+
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
 </project>
