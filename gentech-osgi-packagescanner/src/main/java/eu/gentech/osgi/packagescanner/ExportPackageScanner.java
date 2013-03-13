@@ -214,8 +214,8 @@ public class ExportPackageScanner
 					{
 						if (logger.isDebugEnabled())
 						{
-							logger.info("Package '{}' with version '{}' excluded from location '{}'", new Object[] {
-									name, version, location });
+							logger.debug("Package '{}' with version '{}' excluded from location '{}'", new Object[] {
+									exportPackage.getName(), exportPackage.getVersion(), exportPackage.getLocation() });
 						}
 						return;
 					}
