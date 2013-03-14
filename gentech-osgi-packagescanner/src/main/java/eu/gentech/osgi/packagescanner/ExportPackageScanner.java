@@ -206,13 +206,24 @@ public class ExportPackageScanner
 
 			final ExportPackage exportPackage = new ExportPackage(name, version, location);
 
+			final boolean debugEnabled = logger.isDebugEnabled();
+
+			if (packages.contains(exportPackage))
+			{
+				if (debugEnabled)
+				{
+					logger.debug("Duplicated package: {}", exportPackage);
+				}
+				return;
+			}
+
 			if (CollectionUtils.isNotEmpty(filters))
 			{
 				for (final ExportPackageFilter filter : filters)
 				{
 					if (!filter.accept(exportPackage))
 					{
-						if (logger.isDebugEnabled())
+						if (debugEnabled)
 						{
 							logger.debug("Package '{}' with version '{}' excluded from location '{}'", new Object[] {
 									exportPackage.getName(), exportPackage.getVersion(), exportPackage.getLocation() });
